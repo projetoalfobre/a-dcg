@@ -1,0 +1,109 @@
+.titleboxheader {
+  background-color: ;
+  padding: 5px 5px 5px 10px;
+  font-weight: 900;
+  -moz-border-radius: 0px 0px 0 0;
+  -webkit-border-radius: 0px 0px 0 0;
+  border-radius: 0px 0px 0 0;
+  font-weight: 900;font-size: 2em;
+  color: #007297;
+  text-align: center;
+  background-color: #FFF;
+}
+
+
+
+.titleboxtext {
+  background-color: #;
+  border-left: 0px solid #008CBA;
+  border-right: 0px solid #008CBA;
+  border-bottom: 0px solid #008CBA;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+#titlemenu li {
+  background: ;
+  display: inline;
+  padding: 0px 8px 0px 8px;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+  text-decoration:none;
+}
+
+.boxheader {
+  background-color: #008CBA;
+    color: white;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+
+}
+
+.active {
+  background-color: #008CBA;
+  color: white !important;
+}
+
+.active:hover {
+  cursor:default;
+}
+
+.boxtext {
+  border-left: 1px solid #008CBA;
+  border-right: 1px solid #008CBA;
+  border-bottom: 1px solid #008CBA;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;  
+}
+
+.lowerbox {
+  border: 0px solid #FFC440;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0.1em 0 0.1em 0;
+}
+
+input {
+  line-height: 2em;
+}
+
+p{  line-height: 1.5em;}
+
+.titlerow {text-transform: uppercase;}
+.material-icons {
+  font-size: 1rem !important;
+  margin-left: 1rem;
+}
+
+.defaulttable {
+  border: 1px solid #cecece;
+  margin: 10px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+  
+  

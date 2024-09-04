@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>A-DCG | Alfobre Dublin Core Generator (advanced)</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+	<link rel="stylesheet" type="text/css" href="css/dcstyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.17.custom.css"></link>
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+		<link rel="stylesheet" type="text/css" href="css/fix.css"></link>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<script type="text/javascript" src="js/generator.js"></script>
+	<script type="text/javascript" src="js/interface.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.anirows.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="js/vocabsources.js"></script>
+
+</head>
+<body class="indexbody">
+  <div class="container">
+  		<div class="titleboxheader newheader">A-DCG | Alfobre Dublin Core Generator (advanced)</div>
+		<div class="titleboxtext">
+		    <ul id="titlemenu">
+				<li><a href="index.html" class="button2" title="Main Page">Main Page</a></li>
+				<li><a href="simple_dc_generator.html" class="button2" title="Simple Dublin Core Generator">Simple Generator</a></li>
+				<li><a href="advanced_dc_generator.html" class="button2 active" title="Advanced Dublin Core Generator">Advanced Generator</a></li>
+			</ul>
+		</div>
+
+	<div>&nbsp;</div>
+        <div class="page">
+        <div class="centerpage">
+        <div class="centerbox">
+          <div class="boxheader">Directions</div>
+          <div class="boxtext">
+            <ul class="directionslist">
+		  <li>Fill in the fields below and click on "Generate Metadata!" to convert your input into fully formed Dublin Core metadata code.  Additional options for the format of the output code are available below.</li>
+		  <li>Click on "Save Generated Metadata to File" to download a file with the metadata. On the left side of the button, there's an input field the you can use to choose the file name and extension.</li>
+		  <li>If you need additional copies of a given field, click the plus sign to the upper-right of the tag's name. Click the minus sign to delete additional fields.</li>
+		  <li>If you are unsure how a specific tag works, you can click the question mark next to the tag's name to visit the <a href="https://www.dublincore.org/resources/userguide/" target="_blank">Dublin Core™ User Guide</a>.</li>
+			<li>To use a more specific term from the qualified vocabulary, use the drop down menu for the element to select it. To specify an encoding scheme, use the drop down menu to the right of the element to select a valid option.</li>
+			<li>Use the links on the left side of the page to view helpful information on the different vocabularies.</li>
+			<li>If you do not need to see options for encoding schemes or the more advanced qualified elements of Dublin Core, use the <a href="simple_dc_generator.html">simple generator</a>.</li>
+            </ul> 
+          </div>
+        </div>
+        </div>
+        <div>&nbsp;</div>
+		<div class="leftpage">
+		<div class="leftbox">
+		<div class="boxheader">Resources</div>
+		<div class="boxtext">
+		  <span class="resourceheader">Names:</span><br/>
+			<a href="https://viaf.org/" title=" Virtual International Authority File" target="blank">VIAF</a><br/>
+			<a href="https://www.getty.edu/research/tools/vocabularies/ulan/index.html" title="Union List of Artist Names (Getty Vocabularies)" target="blank">ULAN</a><br/>
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/agentes/en/" title="ROSSIO Agents (ROSSIO Vocabularies )" target="blank">ROSSIO Agents</a><br/>
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/tesauro/en/" title="ROSSIO Thesaurus (ROSSIO Vocabularies )" target="blank">ROSSIO Thesaurus</a><br/>
+				
+		<div class="divider"></div>		
+		  <span class="resourceheader">Subject:</span><br/>
+		    <a href="https://www.getty.edu/research/tools/vocabularies/aat/index.html" title="Art & Architecture Thesaurus (Getty Vocabularies)" target="blank">AAT</a><br/>
+		    <a href="https://agrovoc.fao.org/browse/agrovoc/en/" title="AGROVOC (FAO - Food and Agriculture Organization of the United Nations)" target="blank">AGROVOC</a><br/>
+			<a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/" title="Categories for the Description of Works of Art (Getty Vocabularies)" target="blank">CDWA</a><br/>
+			<a href="https://www.getty.edu/research/tools/vocabularies/cona/index.html" title="Cultural Objects Name Authority (Getty Vocabularies)" target="blank">CONA</a><br/>			
+			<a href="https://entities.oclc.org/worldcat/ddc/" title="Dewey Decimal Classification" target="blank">DDC</a><br/>			
+		    <a href="https://www.itis.gov/" title="Integrated Taxonomic Information System" target="blank">ITIS</a><br/>
+			<a href="https://www.loc.gov/catdir/cpso/lcco/" title="Library of Congress Classification Outline" target="blank">LCC</a><br/>			
+		    <a href="https://www.loc.gov/aba/publications/FreeLCSH/freelcsh.html" title="Library of Congress Subject Headings" target="blank">LCSH</a><br/>
+		    <a href="https://www.nlm.nih.gov/mesh/meshhome.html" title=" Medical Subject Headings" target="blank">MeSH</a><br/>
+		    <a href="https://classification.nlm.nih.gov/" title="National Library of Medicine" target="blank">NLM</a><br/>    
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/lugares/en/" title="ROSSIO Places (ROSSIO Vocabularies )" target="blank">ROSSIO Places</a><br/>			
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/tesauro/en/" title="ROSSIO Thesaurus (ROSSIO Vocabularies )" target="blank">ROSSIO Thesaurus</a><br/>			
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/periodos/en/" title="ROSSIO Time Periods (ROSSIO Vocabularies )" target="blank">ROSSIO Time Periods</a><br/>
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/tesauro-sipa/en/" title="SIPA Thesaurus (ROSSIO Vocabularies )" target="blank">SIPA Thesaurus</a><br/>			
+		    <a href="https://www.loc.gov/pictures/collection/tgm/about.html" title="Thesaurus for Graphic Materials (Library of Congress)" target="blank">TGM</a><br/>    
+			<a href="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" title="Thesaurus of Geographic Names (Getty Vocabularies)" target="blank">TGN</a><br/>
+			<a href="https://udcc.org/" title=" Universal Decimal Classification " target="blank">UDC</a><br/>
+		
+		<div class="divider"></div>
+		  <span class="resourceheader">Date:</span><br/>
+			<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-period/" title="DCMI Period Encoding Scheme" target="blank">DCMI Period</a><br/>
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/tesauro/en/" title="ROSSIO Thesaurus (ROSSIO Vocabularies )" target="blank">ROSSIO Thesaurus</a><br/>			
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/periodos/en/" title="ROSSIO Time Periods (ROSSIO Vocabularies )" target="blank">ROSSIO Time Periods</a><br/>			
+			<a href="https://www.w3.org/TR/NOTE-datetime" title="W3C Date and Time Formats" target="blank">W3-CDTF</a><br/>
+		  
+		<div class="divider"></div>
+		  <span class="resourceheader">Type:</span><br/>
+			<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/" title="DCMI Type Vocabulary" target="blank">DCMI Type</a><br/>
+		  
+		<div class="divider"></div>
+		  <span class="resourceheader">Format:</span><br/>
+			<a href="http://www.iana.org/assignments/media-types/media-types.xhtml" title="Media Types (Internet Assigned Numbers Authority)" target="blank">IMT</a><br/>
+
+		<div class="divider"></div>
+		  <span class="resourceheader">Language:</span><br/>
+			<a href="https://www.loc.gov/standards/iso639-2/php/code_list.php" title="ISO 639-2 Language Codes" target="blank">ISO 639-2</a><br/>
+			<a href="https://iso639-3.sil.org/code_tables/download_tables" title="ISO 639-3 Language Codes" target="blank">ISO 639-3</a><br/>
+
+		<div class="divider"></div>
+		  <span class="resourceheader">Coverage:</span><br/>
+			<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-box/" title="DCMI Box Encoding Scheme" target="blank">DCMI Box</a><br/>
+			<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-period/" title="DCMI Period Encoding Scheme" target="blank">DCMI Period</a><br/>
+			<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-point/" title="DCMI Point Encoding Scheme" target="blank">DCMI Point</a><br/>			
+			<a href="https://en.wikipedia.org/wiki/ISO_3166" title="ISO 3166 - Codes for the representation of names of countries and their subdivisions" target="blank">ISO 3166</a><br/>
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/lugares/en/" title="ROSSIO Places (ROSSIO Vocabularies )" target="blank">ROSSIO Places</a><br/>					
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/tesauro/en/" title="ROSSIO Thesaurus (ROSSIO Vocabularies )" target="blank">ROSSIO Thesaurus</a><br/>
+			<a href="https://vocabs.rossio.fcsh.unl.pt/pub/periodos/en/" title="ROSSIO Time Periods (ROSSIO Vocabularies )" target="blank">ROSSIO Time Periods</a><br/>	
+			<a href="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" title="Thesaurus of Geographic Names (Getty Vocabularies)" target="blank">TGN</a><br/>	  
+		  	<a href="https://www.w3.org/TR/NOTE-datetime" title="W3C Date and Time Formats" target="blank">W3-CDTF</a><br/>
+ 
+		</div>
+		</div>
+		</div>
+		<div class="rightpage">
+		<div class="rightbox">
+		<div class="boxheader">Input</div>
+		<div class="boxtext">
+		<br/>
+		  <table id="titleTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Title<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Titles" target="blank" class="superscript"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#creator" class="addremovebutton" onclick="addRowToTable('title');" tabindex="-1">[+]</a><a href="#creator" class="addremovebutton" onclick="removeRowFromTable('titleTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select name="titleType" class="idleField"><option id="notitle">Title</option><option id="alternativetitle">Alternative Title</option></select></td>
+		      <td><input type="text" name="titleRow" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="creatorTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Creator<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Creator" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+		      <td align="right"><a href="#creator" class="addremovebutton" onclick="addRowToTable('creator');" tabindex="-1">[+]</a><a href="#creator" class="addremovebutton" onclick="removeRowFromTable('creatorTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="creatorRow" size="40" class="idleField"  /></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="subjectTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Subject<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Subject" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#subject" class="addremovebutton" onclick="addRowToTable('subject');" tabindex="-1">[+]</a><a href="#subject" class="addremovebutton" onclick="removeRowFromTable('subjectTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><input type="text" name="subjectRow" id="subjectRow1" size="40" class="idleField" /></td>
+		      <td><select name="subjectType" id="subjectType1" class="idleField"><option></option><option>AAT</option><option>AGROVOC</option><option>DDC</option><option>ITIS</option><option>LCC</option><option>LCSH</option><option>MESH</option><option>NLM</option><option>TGM</option><option>TGN</option><option>UDC</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="descriptionTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Description<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Descriptions" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#description" class="addremovebutton" onclick="addRowToTable('description');" tabindex="-1">[+]</a><a href="#description" class="addremovebutton" onclick="removeRowFromTable('descriptionTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td valign="top"><select name="descriptionType" class="idleField"><option>Description</option><option>Table of Contents</option><option>Abstract</option></select></td>
+		      <td><textarea rows="5" cols="50" name="descriptionRow" class="idleField"></textarea></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="publisherTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Publisher<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Publisher" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#publisher" class="addremovebutton" onclick="addRowToTable('publisher');" tabindex="-1">[+]</a><a href="#publisher" class="addremovebutton" onclick="removeRowFromTable('publisherTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="publisherRow" id="publisherRow1" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="contributorTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Contributor<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Contributor" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#contributor" class="addremovebutton" onclick="addRowToTable('contributor');" tabindex="-1">[+]</a><a href="#contributor" class="addremovebutton" onclick="removeRowFromTable('contributorTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="contributorRow" id="contributorRow1" class="idleField" size="40" /></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="dateTable" class="defaulttable">
+		    <tr>
+		      <td colspan="2" class="titlerow">Date<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Dates" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#date" class="addremovebutton" onclick="addRowToTable('date');" tabindex="-1">[+]</a><a href="#date" class="addremovebutton" onclick="removeRowFromTable('dateTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select id="dateType1" name="dateType" class="idleField"><option>Date</option><option>Date Created</option><option>Date Valid</option><option>Date Available</option><option>Date Issued</option><option>Date Modified</option><option>Date Accepted</option><option>Date Copyrighted</option><option>Date Submitted</option></select></td>
+		      <td><input type="text" name="dateRow" id="dateRow1" size="40" class="idleField" /></td>
+		      <td><select id="dateEncoding1" name="dateEncoding" class="idleField"><option></option><option>Period</option><option>W3C-DTF</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="typeTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Type<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Type" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#type" class="addremovebutton" onclick="addRowToTable('type');" tabindex="-1">[+]</a><a href="#type" class="addremovebutton" onclick="removeRowFromTable('typeTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><input type="text" name="typeRow" id="typeRow1" size="40" class="idleField" /></td>
+		      <td><select name="typeType" id="typeType1" class="idleField"><option></option><option>Type</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="formatTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Format<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Format" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right" colspan="3"><a href="#format" class="addremovebutton" onclick="addRowToTable('format');" tabindex="-1">[+]</a><a href="#format" class="addremovebutton" onclick="removeRowFromTable('formatTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select id="formatType1" name="formatType" class="idleField"><option>Format</option><option>Extent</option><option>Medium</option></select></td>
+		      <td><input type="text" name="formatRow" id="formatRow1" size="40" class="idleField" /></td>
+		      <td><select id="formatEncoding1" name="formatEncoding" class="idleField"><option></option><option>IMT</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="identifierTable" class="defaulttable">
+		    <tr>
+		      <td colspan="2" class="titlerow">Identifier<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Identifiers" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+		      <td align="right" colspan="2"><a href="#identifier" class="addremovebutton" onclick="addRowToTable('identifier');" tabindex="-1">[+]</a><a href="#identifier" class="addremovebutton" onclick="removeRowFromTable('identifierTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select id="identifierType1" name="identifierType" class="idleField"><option>Identifier</option><option>Bibliographic Citation</option></select></td>
+		      <td><input type="text" name="identifierRow" id="identifierRow1" size="40" class="idleField" /></td>
+		      <td><select id="identifierEncoding1" name="identifierEncoding" class="idleField"><option></option><option>URI</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="sourceTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Source<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Source_and_Relations" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right" colspan="2"><a href="#source" class="addremovebutton" onclick="addRowToTable('source');" tabindex="-1">[+]</a><a href="#source" class="addremovebutton" onclick="removeRowFromTable('sourceTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><input type="text" name="sourceRow" id="sourceRow1" size="40" class="idleField" /></td>
+		      <td><select name="sourceType" id="sourceType1" class="idleField"><option></option><option>URI</option></select></td>
+		    </tr>
+		  </table>
+		
+		  <table id="languageTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Language<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Language" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#language" class="addremovebutton" onclick="addRowToTable('language');" tabindex="-1">[+]</a><a href="#language" class="addremovebutton" onclick="removeRowFromTable('languageTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><input type="text" name="languageRow" id="languageRow1" size="40" class="idleField"/></td>
+		      <td><select name="languageType" id="languageType1" class="idleField"><option></option><option>ISO 639-2</option><option>ISO 639-3</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="relationTable" class="defaulttable">
+		    <tr>
+		      <td colspan="2" class="titlerow">Relation<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Source_and_Relations" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#relation" class="addremovebutton" onclick="addRowToTable('relation');" tabindex="-1">[+]</a><a href="#relation" class="addremovebutton" onclick="removeRowFromTable('relationTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select name="relationType" id="relationType1" class="idleField"><option>Relation</option><option>Is Version Of</option><option>Has Version</option><option>Is Replaced By</option><option>Replaces</option><option>Is Required By</option><option>Requires</option><option>Is Part Of</option><option>Has Part</option><option>Is Referenced By</option><option>References</option><option>Is Format Of</option><option>Has Format</option><option>Conforms To</option></select></td>
+		      <td><input type="text" name="relationRow" id="relationRow1" size="40" class="idleField" /></td>
+		      <td><select name="relationEncoding" id="relationEncoding1" class="idleField"><option></option><option>URI</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="coverageTable" class="defaulttable">
+		    <tr>
+		      <td colspan="2" class="titlerow">Coverage<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Coverage" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#coverage" class="addremovebutton" onclick="addRowToTable('coverage');" tabindex="-1">[+]</a><a href="#coverage" class="addremovebutton" onclick="removeRowFromTable('coverageTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select name="coverageType" class="idleField" id="coverageType1"><option>Coverage</option><option>Spatial</option><option>Temporal</option></select></td>
+		      <td><input type="text" name="coverageRow" size="40" class="idleField" id="coverageRow1"/></td>
+		      <td><select name="coverageEncoding" class="idleField" id="coverageEncoding1"><option id="blank1"></option><option id="box1">Box</option><option id="iso31661">ISO3166</option><option id="period1">Period</option><option id="point1">Point</option><option id="tgn1">TGN</option><option id="w3ctdf1">W3CTDF</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="rightsTable" class="defaulttable">
+		    <tr>
+		      <td colspan="2" class="titlerow">Rights<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Rights" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#rights" class="addremovebutton" onclick="addRowToTable('rights');" tabindex="-1">[+]</a><a href="#rights" class="addremovebutton" onclick="removeRowFromTable('rightsTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select name="rightsType" class="idlefield"><option>Rights</option><option>License</option></select></td>
+		      <td><input type="text" name="rightsRow" size="40" class="idleField" /></td>
+		      <td><select name="rightsEncoding" class="idleField"><option></option><option>URI</option></select></td>
+		    </tr>
+		  </table>
+		  
+		  <table id="audienceTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Audience<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Audience" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#audience" class="addremovebutton" onclick="addRowToTable('audience');" tabindex="-1">[+]</a><a href="#audience" class="addremovebutton" onclick="removeRowFromTable('audienceTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td><select name="audienceType" id="audienceType1" class="idleField"><option>Audience</option><option>Education Level</option><option>Mediator</option></select></td>
+		      <td><input type="text" name="audienceRow" id="audienceRow1" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		
+		  <table id="provenanceTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Provenance<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#Provenance" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#provenance" class="addremovebutton" onclick="addRowToTable('provenance');" tabindex="-1">[+]</a><a href="#provenance" class="addremovebutton" onclick="removeRowFromTable('provenanceTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="provenanceRow" id="provenanceRow1" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		
+		  <table id="rightsholderTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Rights Holder<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#RightsHolder" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#rightsholder" class="addremovebutton" onclick="addRowToTable('rightsholder');" tabindex="-1">[+]</a><a href="#rightsholder" class="addremovebutton" onclick="removeRowFromTable('rightsholderTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="rightsholderRow" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		
+		  <table id="instructionalmethodTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Instructional Method<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#InstructionalMethod" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#instructionalmethod" class="addremovebutton" onclick="addRowToTable('instructionalmethod');" tabindex="-1">[+]</a><a href="#instructionalmethod" class="addremovebutton" onclick="removeRowFromTable('instructionalmethodTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="instructionalmethodRow" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		
+		  <table id="accrualmethodTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Accrual Method<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#AccrualMethod" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#accrualmethod" class="addremovebutton" onclick="addRowToTable('accrualmethod');" tabindex="-1">[+]</a><a href="#accrualmethod" class="addremovebutton" onclick="removeRowFromTable('accrualmethodTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="accrualmethodRow" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		
+		  <table id="accrualperiodicityTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Accrual Periodicity<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#AccrualPeriodicity" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#accrualperiodicity" class="addremovebutton" onclick="addRowToTable('accrualperiodicity');" tabindex="-1">[+]</a><a href="#accrualperiodicity" class="addremovebutton" onclick="removeRowFromTable('accrualperiodicityTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="accrualperiodicityRow" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		
+		  <table id="accrualpolicyTable" class="defaulttable">
+		    <tr>
+		      <td class="titlerow">Accrual Policy<a href="https://www.dublincore.org/resources/userguide/creating_metadata/#AccrualPolicy" target="blank" class="superscript" tabindex="-1"><i class="material-icons">help_outline</i></a></td>
+			  <td align="right"><a href="#accrualpolicy" class="addremovebutton" onclick="addRowToTable('accrualpolicy');" tabindex="-1">[+]</a><a href="#accrualpolicy" class="addremovebutton" onclick="removeRowFromTable('accrualpolicyTable');" tabindex="-1">[-]</a></td>
+		    </tr>
+		    <tr>
+		      <td colspan="2"><input type="text" name="accrualpolicyRow" size="40" class="idleField" /></td>
+		    </tr>
+		  </table>
+		</div>
+		</div>
+		<br/>		
+		<div class="rightbox" style="margin-left:-200px">
+		<div class="boxheader">Output Options</div>
+		  <div class="boxtext" style="padding-left:10px;position:relative;" id="outputopts">
+		  <form  />
+			  <div id="xmloptions" style="display:inline">
+			    <input type="checkbox" id="adddeclaration" class="checkbox" /><label>Include standard XML version/encoding declaration.</label><br/>
+			    <input type="checkbox" id="addroot" class="checkbox" /><label>Include root element and namespace.</label><br/>
+			    <div style="margin-left:20px"><label>Desired root element:</label> <input type="text" value="metadata" id="rootname" /></div>
+			    <input type="checkbox" id="adddc" class="checkbox" /><label>Include namespace reference for standard Dublin Core (DC Elements).</label><br/>
+			    <input type="checkbox" id="addqualified" class="checkbox" /><label>Include namespace reference for qualified Dublin Core (DC Terms).</label><br/>
+			  </div>
+			  <br/>
+			  <input type="button" value="Generate Metadata!" onclick="generateCode();" class="button" id="generatebutton"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Reset Page" onclick="javascript:location.reload(true)" class="button" id="resetbutton" />
+		  </div>
+		</div>
+		<div class="rightbox" style="margin-left:-200px">
+		<div class="boxheader">Output</div>
+		<div class="boxtext" style="padding:10px;margin:auto;">
+		  <textarea rows="20" cols="112" name="xmlresults" id="xmlresults"></textarea>
+
+		  <br/><br/>	  
+		          <input id="inputFileNameToSaveAs" value="filename.xml"></input>
+		<input type="button" value="Save Generated Metadata to File" onclick="saveTextAsFile()" class="button" id="savefilebutton"/>		
+		</div>
+		</div>
+		<div class="lowerbox" style="margin-left:-200px">
+		<div class="lowertext">
+			<p>2024 | A-DCG (Alfobre Dublin Core Generator) is a project from <a href="https://alfobre.com" class="alfobre-link" target="_blank">Alfobre.com</a>. 
+				Source code is available at <a href="https://github.com/projetoalfobre/a-dcg">GitHub</a> and released under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License (v2)</a>.</p>
+				 <p>This site is a modified version of the <a href="https://nsteffel.github.io/dublin_core_generator/index.html">Dublin Core Generator</a>, available under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License (v2)</a>.</p>
+			   </div>
+		</div>
+		</div><!--End rightpage-->
+		</div><!--End page-->
+  </div><!--End container-->
+
+<!--Begin modal popups-->
+
+
+
+<script type="text/javascript">
+ 
+function saveTextAsFile()
+{
+    var textToSave = document.getElementById("xmlresults").value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+ 
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+ 
+    downloadLink.click();
+}
+ 
+function destroyClickedElement(event)
+{
+    document.body.removeChild(event.target);
+}
+ 
+function loadFileAsText()
+{
+    var fileToLoad = document.getElementById("fileToLoad").files[0];
+ 
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) 
+    {
+        var textFromFileLoaded = fileLoadedEvent.target.result;
+        document.getElementById("xmlresults").value = textFromFileLoaded;
+    };
+    fileReader.readAsText(fileToLoad, "UTF-8");
+}
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>A-DCG | Alfobre Dublin Core Generator (simple)</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	
+	<link rel="stylesheet" type="text/css" href="css/dcstyle.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.17.custom.css"></link>
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+		<link rel="stylesheet" type="text/css" href="css/fix.css"></link>
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/generator_nq.js"></script>
+	<script type="text/javascript" src="js/interface_nq.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.anirows.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+	$( "input:button, input:submit").button();
+	});
+	</script>
+</head>
+<body class="indexbody">
+  <div class="container">
+  		<div class="titleboxheader newheader">A-DCG | Alfobre Dublin Core Generator</div>
+		<div class="titleboxtext">
+		    <ul id="titlemenu">
+				<li><a href="index.html" class="button2 active" title="Main Page">Main Page</a></li>
+				<li><a href="simple_dc_generator.html" class="button2" title="Simple Dublin Core Generator">Simple Generator</a></li>
+				<li><a href="advanced_dc_generator.html" class="button2" title="Advanced Dublin Core Generator">Advanced Generator</a></li>
+			</ul>
+		</div>
+
+	<div>&nbsp;</div>
+	  <div class="page">
+	  <div class="centerpage">
+	  <div class="centerbox">
+		<div class="boxheader">Welcome!</div>
+		<div class="boxtext">
+		<p><strong>A-DCG</strong> (Alfobre Dublin Core Generator) is a web tool project developed to support the creation of <strong>Dublin Core</strong> (DC) metadata.
+			The tool comes in two flavors: the <strong><a href="simple_dc_generator.html" title="A-DCG | Alfobre Dublin Core Generator (simple)">simple version</a></strong> only uses the 15 DC main elements 
+		and the <strong><a href="advanced_dc_generator.html" title="A-DCG | Alfobre Dublin Core Generator (simple)">advanced version</a></strong> generates Dublin Core metadata code using the more detailed qualified elements and encoding schemes.</p>
+		  <p>A-DCG has no relation or affiliation with the <a href="https://www.dublincore.org" target="_blank">Dublin Core™ Metadata Initiative</a>.</p>
+		  <p>This tool can be used online (like in this website) and offline. If you want to use it offline, just download de source code 
+			from <a href="https://github.com/projetoalfobre/a-dcg">GitHub</a> and use a browser to open the index.html file. If you want, you can also install this tool in your own server or create 
+		your own version.</p>  
+		<p>For any questions, comments or suggestions please send an email to projeto.alfobre@gmail.com</p>
+		</div>
+	  </div>
+	  		</div>
+	  </div>
+	  <div class="page">
+	  <div class="centerpage">
+	  <div class="centerbox">
+		<div class="boxheader">Credits and licenses</div>
+		<div class="boxtext">
+		<p><strong>A-DCG</strong> is maintained by <a href="https://alfobre.com" class="" target="_blank" rel="noopener">Alfobre</a> (portuguese for seedbed), a collective devoted to the creation and development of projects, strategies and products in the Heritage field.</p>
+		 <p>This tool is Free/Libre software. The source code is available at <a href="https://github.com/projetoalfobre/a-dcg">GitHub</a> and is released under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">GNU General Public License (v2)</a>.</p>
+		  <p>This website/tool is a modified version of the <a href="https://nsteffel.github.io/dublin_core_generator/index.html" target="_blank">Dublin Core Generator</a>, available under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt" target="_blank">GNU General Public License (v2)</a>.</p>
+		</div>
+	  </div>
+	  		</div>
+	  </div>
+		<br/>
+		<div class="lowerbox">
+		<div class="lowertext">
+		<p>2024 | A-DCG (Alfobre Dublin Core Generator) is a project from <a href="https://alfobre.com" class="alfobre-link" target="_blank">Alfobre.com</a>. 
+		 Source code is available at <a href="https://github.com/projetoalfobre/a-dcg">GitHub</a> and released under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License (v2)</a>.</p>
+		  <p>This site is a modified version of the <a href="https://nsteffel.github.io/dublin_core_generator/index.html">Dublin Core Generator</a>, available under the <a href="https://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License (v2)</a>.</p>
+		</div>
+		</div>
+
+  </div><!--End container-->
+  
+  
+  <script type="text/javascript">
+ 
+function saveTextAsFile()
+{
+    var textToSave = document.getElementById("xmlresults").value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+ 
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+ 
+    downloadLink.click();
+}
+ 
+function destroyClickedElement(event)
+{
+    document.body.removeChild(event.target);
+}
+ 
+function loadFileAsText()
+{
+    var fileToLoad = document.getElementById("fileToLoad").files[0];
+ 
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) 
+    {
+        var textFromFileLoaded = fileLoadedEvent.target.result;
+        document.getElementById("xmlresults").value = textFromFileLoaded;
+    };
+    fileReader.readAsText(fileToLoad, "UTF-8");
+}
+ 
+</script>
+</body>
+</html>
