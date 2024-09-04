@@ -92,7 +92,7 @@ input {
 
 p{  line-height: 1.5em;}
 
-.titlerow {text-transform: uppercase;}
+.titlerow {text-transform: uppercase;font-weight: 900;}
 .material-icons {
   font-size: 1rem !important;
   margin-left: 1rem;
@@ -106,4 +106,39 @@ p{  line-height: 1.5em;}
   border-radius: 0px;
 }
   
+.indexbody {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputbox-simple{margin-right:200px}
+textarea {width: 99% !important;}
+
+.altleftpage{display: none;}
+
+.resourceheader {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {width: 90%;margin: auto;
+    padding: 0;}
+  .centerpage {width: 100%;}
   
+  .inputbox-simple{margin-right:0px}
+.leftpage {width: 23%;float: left;padding: 0;}
+.rightpage {width: 75%;float: right;padding: 0;}
+#coverageRow1, #relationRow1, #identifierRow1, #dateRow1 {width: 98% !important;}
+}
+
+@media only screen and (max-width: 772px) {
+  .leftpage{display: none;}
+  .altleftpage{display: initial;}
+  .rightpage{width: 100%;float: right;padding: 0;}
+  #formatRow1,#languageRow1,#audienceRow1,#rightsRowfix, #sourceRow1, #typeRow1, #subjectRow1, #titleRowfix {width: 98% !important;}
+}
+
+
